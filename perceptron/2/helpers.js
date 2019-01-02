@@ -1,0 +1,1 @@
+const get_random = (max = 2) => (Math.random() * max) - 1;
