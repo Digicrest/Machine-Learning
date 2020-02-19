@@ -11,13 +11,6 @@ class perceptron {
     }
 
     weighted_sum() {
-        // let sum = 0;
-        // for(let i = 0; i < this.inputs.length; i++) {
-        //     let normalised_input = this.inputs[i] / 255;
-        //     sum += normalised_input * this.weights[i];
-        // }
-        // return sum;
-
         return this.weights.reduce((sum, w, i) => sum +=  (this.inputs[i] / 255) * w, 0)
     }
 

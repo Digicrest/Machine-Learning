@@ -48,7 +48,7 @@ class Perceptron {
         //     total += input[i] * this.weights[i];
         // }
 
-        let weighted_sum = weights.reduce((product, w, idx) => product + input[idx] * w, this.bias)
+        let weighted_sum = this.weights.reduce((product, w, idx) => product + input[idx] * w, this.bias)
         return this.activation(weighted_sum);
     }
 
